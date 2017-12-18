@@ -1,6 +1,6 @@
 module.exports= app =>{
 
-    const Libros = app.db.models.Libro;
+    const Libros = app.db.libros;
     
     app.get("/libros",(req,res)=>{
         

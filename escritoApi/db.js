@@ -23,12 +23,13 @@ module.exports = app =>{
       });
 
           db = {
-            sequelize,Sequelize,models:{}
+            sequelize,Sequelize
           };
 
-          ///importar modelos
-          const autores = sequelize.import(__dirname + "/models/autorModel")
-          const libros = sequelize.import(__dirname + "/models/libroModel")
+          
+
+         db.autores = sequelize.import(__dirname + "/models/autorModel")
+          db.libros = sequelize.import(__dirname + "/models/libroModel")
      }
 
 
